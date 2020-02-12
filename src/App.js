@@ -53,8 +53,6 @@ class App extends Component {
       `https://api.github.com/users/${username}/repos?per_page=5&sort=created:asc&client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
     );
 
-    console.log(res);
-
     this.setState({
       repos: res.data,
       loading: false
