@@ -54,6 +54,17 @@ class User extends Component {
             <h1>{name}</h1>
             <p>Location: {location}</p>
           </div>
+          <div>
+            {bio && (
+              <Fragment>
+                <h3>Bio</h3>
+                <p>{bio}</p>
+              </Fragment>
+            )}
+            <a href={html_url} className='btn btn-dark my-1'>
+              Visit github profile
+            </a>
+          </div>
         </div>
       </Fragment>
     );
