@@ -6,10 +6,14 @@ export class Search extends Component {
   };
   onChange = e => this.setState({ [e.target.name]: e.target.value });
 
+  onSubmit = e => {
+    e.preventDefault();
+    console.log(this.state.text);
+  };
   render() {
     return (
       <div>
-        <form className='form'>
+        <form onSubmit={this.onSubmit} className='form'>
           <input
             type='text'
             name='text'
