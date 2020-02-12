@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
 
 export class Search extends Component {
+  state = {
+    text: ''
+  };
   render() {
     return (
       <div>
         <form className='form'>
-          <input type='text' name='text' placeholder='search users' />
+          <input
+            type='text'
+            name='text'
+            placeholder='search users'
+            value={this.state.text}
+          />
           <input
             type='submit'
             value='Search'
