@@ -24,7 +24,13 @@ export class Users extends Component {
     ]
   };
   render() {
-    return <div></div>;
+    return (
+      <div>
+        {this.state.users.map(user => (
+          <div>{user.login}</div>
+        ))}
+      </div>
+    );
   }
 }
 
