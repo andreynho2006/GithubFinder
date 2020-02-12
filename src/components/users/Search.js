@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+static propTypes = {
+    searchUsers: PropTypes.func.isRequired,
+}
 
 export class Search extends Component {
   state = {
