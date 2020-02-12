@@ -4,6 +4,9 @@ export class Search extends Component {
   state = {
     text: ''
   };
+  onChange = e => {
+    this.setState({ text: e.target.value });
+  };
   render() {
     return (
       <div>
@@ -13,6 +16,7 @@ export class Search extends Component {
             name='text'
             placeholder='search users'
             value={this.state.text}
+            onChange={this.onChange}
           />
           <input
             type='submit'
