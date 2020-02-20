@@ -1,5 +1,5 @@
 # GithubFinder
 
-[Visit Github Finder app](https://nostalgic-bardeen-4f46ed.netlify.com/).
+[Visit Github Finder app](https://andreynho2006-github-finder.netlify.com/).
 
 
